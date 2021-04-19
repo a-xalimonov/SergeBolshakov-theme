@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "SergeBolshakov VK Theme",
+    "version": "1.0.0",
+    "icons": {
+      "128": "icons/128.png",
+      "48": "icons/48.png",
+      "16": "icons/16.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+            "https://vk.com/*",
+            "http://vk.com/*"
+        ],
+        "js": ["content.js"],
+        "css": ["css/baseStyle.css", "css/commonStyle.css", "css/uiStyle.css", "css/page1Style.css", "css/imStyle.css"]
+      }
+    ]
+  }
